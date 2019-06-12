@@ -1,5 +1,3 @@
-package booth.binary
-
 fun numberOfBit(number: Int): Int {
     var x = number
     x = Math.abs(x)
@@ -50,5 +48,9 @@ fun main() {
 
 infix fun Int.findDigit(n2:Int):Int=when(this and(1 shl n2-1)){
     0 -> 0
+    else ->1
+}
+infix fun Long.findDigit(n2:Int):Int=when(this and((1 shl n2-1).toLong())){
+    0L-> 0
     else ->1
 }

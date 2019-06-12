@@ -1,11 +1,12 @@
 private const val possitive = "0"
 private val negetive = "1"
-val map :HashMap<Boolean,String> by lazy {
-    HashMap<Boolean,String>().apply {
-        put(true,"0")
-        put(false,"1")
+val map: HashMap<Boolean, String> by lazy {
+    HashMap<Boolean, String>().apply {
+        put(true, "0")
+        put(false, "1")
     }
 }
+
 private fun binaryValueWithoutSign(number: Number, sb: StringBuilder): String {
     if (number.number == 0)
         return sb.toString()
@@ -32,6 +33,9 @@ private fun twoCoplimention(number: String): String {
     sb.insert(0, negetive)
     return sb.toString()
 }
+fun main() {
+    
+}
 
 fun binaryValue(number: Number): String {
     val temp = number.number
@@ -47,7 +51,7 @@ fun binaryValue(number: Number): String {
 
 fun complementWithCustomBasic(n: Int, number: String, isPositive: Boolean): String {
     val sb = StringBuilder()
-    val value=map.get(isPositive)
+    val value = map.get(isPositive)
     for (i in 1..n) {
         sb.append(value)
     }
@@ -66,13 +70,13 @@ fun shiftRight(string: String): String {
 
 fun showTwoComplement(number: String): Int {
     var v = 0;
-    val lastIndex=number.lastIndex
-    for (i in number.lastIndex  downTo 1) {
-        v =v+( (2 pow(lastIndex-i) ) * (number[i].toInt() - 48))
+    val lastIndex = number.lastIndex
+    for (i in number.lastIndex downTo 1) {
+        v = v + ((2 pow (lastIndex - i)) * (number[i].toInt() - 48))
     }
     if (number[0].toString() == "1") {
         val temp = 2 pow number.lastIndex
-        return (temp-v)*-1
+        return (temp - v) * -1
     }
     return v
 }

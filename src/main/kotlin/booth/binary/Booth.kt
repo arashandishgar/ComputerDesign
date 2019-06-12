@@ -1,5 +1,9 @@
 package booth.binary
 
+import arethmathicShiftRight
+import numberOfBit
+import plusBool
+
 fun calculate(multipicand: Int, multiplier1: Int): Int {
     var multiplier = multiplier1
     val numberOfBit = numberOfBit(multipicand)
