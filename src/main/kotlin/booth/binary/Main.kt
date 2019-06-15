@@ -15,9 +15,9 @@ fun main() {
             multiplier *= -1
         }
     }
-
+    val a=System.nanoTime()
     println(calculate(multipicand, multiplier))
-
-
+    val b=System.nanoTime()
+    println(b-a)
 }
 

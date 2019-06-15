@@ -1,12 +1,12 @@
 package booth.binary
 
-import arethmathicShiftRight
-import numberOfBit
-import plusBool
+import util.arethmathicShiftRight
+import util.numberOfBitWithSign
+import util.plusBool
 
 fun calculate(multipicand: Int, multiplier1: Int): Int {
     var multiplier = multiplier1
-    val numberOfBit = numberOfBit(multipicand)
+    val numberOfBit = numberOfBitWithSign(multipicand)
     var q0 = 0
     var accumulated = 0
     val immutableMap = HashMap<Int, Int>().apply {
@@ -16,7 +16,7 @@ fun calculate(multipicand: Int, multiplier1: Int): Int {
     for (i in 0 until numberOfBit) {
         val q1q0 = ((multiplier and 1) shl 1) or q0
         if (q1q0 == 2 || q1q0 == 1) {
-            accumulated = plusBool(accumulated, immutableMap[q1q0]!!)
+            accumulated = accumulated plusBool  immutableMap[q1q0]!!
 
         }
         val temp = (accumulated shl numberOfBit + 1) or (multiplier shl 1) or q0

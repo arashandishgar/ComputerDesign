@@ -1,9 +1,14 @@
 package floatingpoint
 
-import java.lang.Double.doubleToLongBits
-import java.lang.Long.toBinaryString
+import util.sortByAbsValue
 
 fun main() {
-    val a= Float.run { doubleToLongBits(.5) }
-    println(Long.run {  toBinaryString(a)})
+    println("put first number")
+    val temp1= readLine()!!.toFloat()
+    println("put first number")
+    val temp2= readLine()!!.toFloat()
+    println("num 1 : $temp1   num2 : $temp2" )
+    val (n1,n2)= sortByAbsValue(temp1, temp2)
+    plusFloat(n1,n2)
 }
+

@@ -10,7 +10,11 @@ fun main() {
         if (multiplier.number > multipicand.number) {
             multipicand = multiplier.also { multiplier = multipicand }
         }
+        var a=System.nanoTime()
         println(calculate(multipicand, multiplier))
+        var b=System.nanoTime()
+        print(b-a)
+        println()
         println("continu!! y or press any key to exit")
         canContinue = readLine()!!
 
