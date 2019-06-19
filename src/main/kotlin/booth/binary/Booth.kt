@@ -1,9 +1,7 @@
 package booth.binary
 
-import util.arethmathicShiftRight
-import util.getOppositeValue
-import util.numberOfBitWithSign
-import util.plusBool
+import floatingpoint.getRangeOFBit
+import util.*
 
 fun calculate(multipicand: Int, multiplier1: Int): Int {
     var multiplier = multiplier1
@@ -20,22 +18,18 @@ fun calculate(multipicand: Int, multiplier1: Int): Int {
             accumulated = accumulated plusBool  immutableMap[q1q0]!!
 
         }
-        val temp = (accumulated shl numberOfBit + 1) or (multiplier shl 1) or q0
+       /* val temp = (accumulated shl numberOfBit + 1) or (multiplier shl 1) or q0*/
+        var temp= concatBinaryValueTwoNumber(multiplier,q0,1)
+        temp= concatBinaryValueTwoNumber(accumulated,temp,numberOfBit+1)
         var result = arethmathicShiftRight(temp, 2 * numberOfBit + 1)
-        q0 = result and 1
+        q0 = result findDigit  1
         result = result shr 1
-
-        multiplier = 0
-        for (j in numberOfBit - 1 downTo 0) {
-            multiplier += (result and (1 shl j))
-        }
-        for (j in numberOfBit - 1 downTo 0) {
-            result = result shr 1
-        }
+        multiplier=result.getRangeOFBit(1..numberOfBit)
+        result = result shr numberOfBit
         accumulated = result
 
     }
-    val value = ((accumulated shl numberOfBit) or multiplier)
+    val value = concatBinaryValueTwoNumber(accumulated,multiplier,numberOfBit)
     return value
 }
 

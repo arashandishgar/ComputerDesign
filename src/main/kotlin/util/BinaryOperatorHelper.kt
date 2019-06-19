@@ -1,6 +1,6 @@
 package util
 
-val IntDigitRange = 1..Int.SIZE_BITS
+val Int_DIGIT_RANGE = 1..Int.SIZE_BITS
 
 fun numberOfBitWithSign(number: Int): Int {
     var x = Math.abs(number)
@@ -38,13 +38,10 @@ fun arethmathicShiftRight(int: Int, n: Int): Int {
 }
 
 fun main() {
-    val a = System.nanoTime()
-    (-7 plusBool 2).println()
-    val b = System.nanoTime()
-    println(b - a)
+    (-934934943).abs().println()
 }
 
-infix fun Int.findDigit(n2: Int): Int = when (this and (1 shl n2 - 1)) {
+infix fun Int.findDigit(n: Int): Int = when (this and (1 shl n - 1)) {
     0 -> 0
     else -> 1
 }
@@ -80,3 +77,14 @@ fun isPositive(n1: Int) = (n1 findDigit 32) == 0
 
 @JvmName("isPositive extend for Int")
 fun Int.isPositive() = isPositive(this)
+
+fun Int.abs():Int{
+    val sing=this findDigit Int.SIZE_BITS
+    var result=0
+    for(i in Int_DIGIT_RANGE){
+        val temp=(this findDigit i) xor sing
+        result= concatBinaryValueTwoNumber(temp,result,i-1)
+    }
+    result=result plusBool sing
+    return result
+}

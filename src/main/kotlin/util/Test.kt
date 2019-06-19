@@ -1,7 +1,8 @@
 package util
 
 fun main() {
-    while (true) {
-        readLine()
-    }
+    val a = System.nanoTime()
+    println(400 *   500)
+    val b= System.nanoTime()
+    println(b-a)
 }
