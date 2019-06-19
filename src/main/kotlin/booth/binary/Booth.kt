@@ -1,6 +1,7 @@
 package booth.binary
 
 import util.arethmathicShiftRight
+import util.getOppositeValue
 import util.numberOfBitWithSign
 import util.plusBool
 
@@ -11,7 +12,7 @@ fun calculate(multipicand: Int, multiplier1: Int): Int {
     var accumulated = 0
     val immutableMap = HashMap<Int, Int>().apply {
         put(1, multipicand)
-        put(2, -multipicand)
+        put(2, multipicand.getOppositeValue())
     }
     for (i in 0 until numberOfBit) {
         val q1q0 = ((multiplier and 1) shl 1) or q0
@@ -35,7 +36,7 @@ fun calculate(multipicand: Int, multiplier1: Int): Int {
 
     }
     val value = ((accumulated shl numberOfBit) or multiplier)
-    return value;
+    return value
 }
 
 

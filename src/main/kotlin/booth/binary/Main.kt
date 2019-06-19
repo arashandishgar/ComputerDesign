@@ -1,7 +1,9 @@
 package booth.binary
 
+import util.arethmathicShiftRight
+import util.printBinaryString
+
 fun main() {
-    var canContinue = "y"
     println("put multipicand betwee-5n -15 or 15")
     var multipicand = readLine()!!.toInt()
     println("put  multiplier 0 or 15")
@@ -19,5 +21,6 @@ fun main() {
     println(calculate(multipicand, multiplier))
     val b=System.nanoTime()
     println(b-a)
+    arethmathicShiftRight(5,3).printBinaryString()
 }
 

@@ -10,7 +10,7 @@ val map: HashMap<Boolean, String> by lazy {
 private fun binaryValueWithoutSign(number: Number, sb: StringBuilder): String {
     if (number.number == 0)
         return sb.toString()
-    val remainder = number.number % 2;
+    val remainder = number.number % 2
     sb.insert(0, remainder)
     number /= 2
     return binaryValueWithoutSign(number, sb)
@@ -43,7 +43,7 @@ fun binaryValue(number: Number): String {
     binaryValueWithoutSign(number, value)
     if (!number.isPositive) {
         number.number = temp
-        return twoCoplimention(value.toString());
+        return twoCoplimention(value.toString())
     }
     number.number = temp
     return value.insert(0, possitive).toString()
@@ -69,7 +69,7 @@ fun shiftRight(string: String): String {
 }
 
 fun showTwoComplement(number: String): Int {
-    var v = 0;
+    var v = 0
     val lastIndex = number.lastIndex
     for (i in number.lastIndex downTo 1) {
         v = v + ((2 pow (lastIndex - i)) * (number[i].toInt() - 48))

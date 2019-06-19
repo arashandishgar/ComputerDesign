@@ -5,7 +5,7 @@ fun calculate(multipicand: Number, multiplier: Number): Int {
     val multipicand_oppositeBinaryValue = binaryValue(multipicand)
     val temp = binaryValue(multiplier)
     var multiplier_binaryValue = complementWithCustomBasic(numberOfBitMutltipcand - temp.length, temp, multiplier.isPositive)
-    var q0 = "0";
+    var q0 = "0"
     var accumulated = complementWithCustomBasic(numberOfBitMutltipcand, "", true)
     val immutableMap = HashMap<String, String>().apply {
         put("01", multipicand_binaryValue)
@@ -19,7 +19,7 @@ fun calculate(multipicand: Number, multiplier: Number): Int {
         if (q1q0 == "10" || q1q0 == "01") {
             accumulated = accumulated plusBool immutableMap[q1q0]!!
         }
-        sb.clear();
+        sb.clear()
         sb += accumulated
         sb += multiplier_binaryValue
         sb += q0
@@ -30,10 +30,10 @@ fun calculate(multipicand: Number, multiplier: Number): Int {
         sb.clear()
     }
 
-    val t = sb.append(accumulated).append(multiplier_binaryValue).toString();
+    val t = sb.append(accumulated).append(multiplier_binaryValue).toString()
     println("binary value is : " + t)
     val value = showTwoComplement(t)
-    return value;
+    return value
 }
 
 

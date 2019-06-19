@@ -3,13 +3,12 @@ package util
 val IntDigitRange = 1..Int.SIZE_BITS
 
 fun numberOfBitWithSign(number: Int): Int {
-    var x = number
-    x = Math.abs(x)
+    var x = Math.abs(number)
     var n = 0
-    while (x != 0) {
-        x = (x shr n)
+    do{
         n++
-    }
+        x=x shr 1
+    }while (x !=0)
     return n + 1  //+1 for sign bit
 }
 
@@ -22,7 +21,7 @@ infix fun Int.plusBool(n2: Int?): Int {
         val a = this findDigit i
         val b = n2!! findDigit i
         //i number of digit you want and i-1 nunber of  shift
-        s = concatBinaryValueTwoNumber(a xor b xor carry,s,i-1)
+        s = concatBinaryValueTwoNumber(a xor b xor carry, s, i - 1)
         carry = (a and b) or (a and carry) or (b and carry)
     }
 
@@ -32,22 +31,18 @@ infix fun Int.plusBool(n2: Int?): Int {
 
 fun arethmathicShiftRight(int: Int, n: Int): Int {
     val i = (int shr 1)
-    val l = when (int findDigit n) {
-        0 -> 0
-        else -> 1
-    }.let {
-        (it shl n) or i
+    val l = (int findDigit n).let {
+        (it shl n - 1) or i
     }
     return l
 }
 
 fun main() {
-    val a=System.nanoTime()
-    (10000 plusBool     10000).println()
-    val b=System.nanoTime()
-    println(b-a)
+    val a = System.nanoTime()
+    (-7 plusBool 2).println()
+    val b = System.nanoTime()
+    println(b - a)
 }
-
 
 infix fun Int.findDigit(n2: Int): Int = when (this and (1 shl n2 - 1)) {
     0 -> 0
@@ -61,24 +56,27 @@ fun sortByAbsValue(n1: Float, n2: Float): Pair<Float, Float> {
         else -> return Pair(n1, n2)
     }
 }
-fun showTwoBinaryRepresentation(n1:Int)=when(n1.isPositive()){
-    true-> n1
-    false -> n1.getOppositeValue()
+
+fun showTwoBinaryRepresentation(n1:Int,s: Int) = when (s) {
+    0 -> n1
+    else -> n1.getOppositeValue()
 }
+
 @JvmName("showTwoBinaryRepresentation extend for int ")
-fun Int.showTwoBinaryRepresentation()=showTwoBinaryRepresentation(this)
+fun Int.showTwoBinaryRepresentation(s:Int) = showTwoBinaryRepresentation(this,s)
 
 /**
  * conncctt two binary Value
  *
-* @param i numberOfBit seccondNumber
-*
-* @return concat Binart
-* @sample  concatBinaryValueTwoNumber (100 ,111 ,3) -> 100111
-*/
-fun concatBinaryValueTwoNumber(first: Int, seccond: Int, i: Int) = (first shl i) or seccond
+ * @param i numberOfBit seccondNumber
+ *
+ * @return concat Binart
+ * @sample  concatBinaryValueTwoNumber (100 ,111 ,3) -> 100111
+ */
+fun concatBinaryValueTwoNumber(first: Int, seccond: Int, i: Int)
+        = (first shl i) or seccond
 
-fun isPositive(n1:Int)=(n1 findDigit 32)==0
+fun isPositive(n1: Int) = (n1 findDigit 32) == 0
 
 @JvmName("isPositive extend for Int")
-fun Int.isPositive()=isPositive(this)
+fun Int.isPositive() = isPositive(this)

@@ -17,7 +17,7 @@ fun main() {
         println()
         println("continu!! y or press any key to exit")
         canContinue = readLine()!!
-
+        print("SAS")
     }
 }
 

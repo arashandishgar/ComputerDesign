@@ -1,4 +1,4 @@
-private var booleanValue = true;
+private var booleanValue = true
 
 data class Number(var isPositive: Boolean, var number: Int) {
     operator fun divAssign(i: Int) {
@@ -27,7 +27,7 @@ infix fun String.plusBool(value: String): String {
 }
 
 infix fun Int.pow(other:Int):Int{
-    var v=1;
+    var v=1
     for (i in 0 until  other){
         v*=this
     }
