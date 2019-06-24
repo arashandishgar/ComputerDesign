@@ -12,7 +12,7 @@ fun numberOfBitWithSign(number: Int): Int {
     return n + 1  //+1 for sign bit
 }
 
-fun Int.getOppositeValue() = this.inv() + 1
+fun Int.getNagativeValue() = this.inv() + 1
 
 infix fun Int.plusBool(n2: Int?): Int {
     var carry = 0
@@ -38,7 +38,7 @@ fun arethmathicShiftRight(int: Int, n: Int): Int {
 }
 
 fun main() {
-    (-934934943).abs().println()
+    "F".covertHexDesimalFormatDecimalInt().println()
 }
 
 infix fun Int.findDigit(n: Int): Int = when (this and (1 shl n - 1)) {
@@ -56,11 +56,11 @@ fun sortByAbsValue(n1: Float, n2: Float): Pair<Float, Float> {
 
 fun showTwoBinaryRepresentation(n1:Int,s: Int) = when (s) {
     0 -> n1
-    else -> n1.getOppositeValue()
+    else -> n1.getNagativeValue()
 }
 
 @JvmName("showTwoBinaryRepresentation extend for int ")
-fun Int.showTwoBinaryRepresentation(s:Int) = showTwoBinaryRepresentation(this,s)
+fun Int.showTwoBinaryRepresentation(s:Int) = showTwoBinaryRepresentation(this, s)
 
 /**
  * conncctt two binary Value
@@ -83,8 +83,10 @@ fun Int.abs():Int{
     var result=0
     for(i in Int_DIGIT_RANGE){
         val temp=(this findDigit i) xor sing
-        result= concatBinaryValueTwoNumber(temp,result,i-1)
+        result= concatBinaryValueTwoNumber(temp, result, i - 1)
     }
     result=result plusBool sing
     return result
 }
+fun String.covertHexDesimalFormatDecimalInt()= java.lang.Integer.parseInt(this.substringAfter("x"), 16);
+

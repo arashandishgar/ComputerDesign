@@ -7,7 +7,7 @@ fun plusFloat(n1: Float, n2: Float): Float {
     val n1BinaryValue = n1.toBits()
     val n2BinaryValue = n2.toBits()
     var mainExponent = n1BinaryValue.getExponent()
-    var numberOfShift = n1BinaryValue.getExponent() plusBool n2BinaryValue.getExponent().getOppositeValue()
+    var numberOfShift = n1BinaryValue.getExponent() plusBool n2BinaryValue.getExponent().getNagativeValue()
     val n2FracttionShifted =
         n2BinaryValue.getRawFraction().getShiftedFraction(numberOfShift)
             .showTwoBinaryRepresentation(n2BinaryValue findDigit Sign_Digit)
@@ -27,7 +27,7 @@ fun plusFloat(n1: Float, n2: Float): Float {
     } else if (numberOfShift == Int.MIN_VALUE) {
         return 0f
     } else {
-        sumFraction = sumFraction shl numberOfShift.getOppositeValue()
+        sumFraction = sumFraction shl numberOfShift.getNagativeValue()
     }
     var result = sumFraction.getRawFraction()
     result = concatBinaryValueTwoNumber(mainExponent, result, Fraction_Size)
