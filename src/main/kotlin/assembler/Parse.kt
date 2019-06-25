@@ -3,21 +3,13 @@ package assembler
 import util.*
 import java.io.File
 
-private const val COMMENT = "#"
-private const val LABEL_SIZE = 1
-private const val FORMAT_R = "R"
-private const val FORMAT_I = "I"
-private const val FORMAT_J = "J"
-private const val EXCEPTION_MESSAGE = "This instruction not exist In Data Base"
-
 fun parseFileAssamblytoMachineCode(path: String) {
     val result = arrayListOf<BaseFormatParser>()
     var programCounter = 0
     val labelMap = mutableMapOf<String, Int>()
     File(path).forEachLine {
         programCounter = programCounter plusBool 4
-        val list = it.substringBefore(COMMENT).split(" ", ",", "$", "(", ")", ":").filter { it.length != 0 }.
-            map { it.substringAfter(" ") }
+        val list = it.iterateLineOfAssembler()
         if(list.size==0){
             //don not need any thing con not call continue here
             programCounter=programCounter plusBool -4

@@ -1,7 +1,6 @@
 package assembler
 
 import util.findDigit
-import util.println
 
 sealed class BaseFormatParser() {
     abstract val opCode: Int
@@ -70,6 +69,4 @@ private  infix fun Int.getRangeOfBitSizeToString(range:Int):String{
     }
     return sb.toString()
 }
-fun main() {
-    (4 getRangeOfBitSizeToString 15).println()
-}
+

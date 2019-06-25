@@ -8,7 +8,7 @@ import java.sql.Connection
 object DataBase {
 
     var path = ""
-    val db by lazy {
+    private val db by lazy {
         Database.connect("jdbc:sqlite:" + path, "org.sqlite.JDBC")
     }
 

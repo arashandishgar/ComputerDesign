@@ -20,10 +20,6 @@ fun main() {
         multipicand = multipicand.getNagativeValue()
         multiplier = multiplier.getNagativeValue()
     }
-    println(" multipicand : $multipicand -multiplier : $multiplier ")
-    val a = System.nanoTime()
     calculate(multipicand, multiplier).println()
-    val b = System.nanoTime()
-    println(b - a)
 }
 

@@ -88,5 +88,6 @@ fun Int.abs():Int{
     result=result plusBool sing
     return result
 }
-fun String.covertHexDesimalFormatDecimalInt()= java.lang.Integer.parseInt(this.substringAfter("x"), 16);
+fun String.covertHexDesimalFormatDecimalInt()= java.lang.Integer.parseInt(this.substringAfter("x"), 16)
+infix fun Int.deletNumberOfFromFirst(int: Int)=this shr int
 

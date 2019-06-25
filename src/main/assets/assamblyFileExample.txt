@@ -1,4 +1,5 @@
-    add    $t0, $gp, $zero      # &A[0] - 28
+
+    add    $t100, $gp, $zero      # &A[0] - 28
     mult   $t0, $gp 
     lw     $t1, 4($gp)          # fetch N
     sll    $t1, $t1, 2          # N as byte offset

@@ -5,12 +5,21 @@
     <option name="CUSTOM_SCOPE_NAME" value="Project Files" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fb3d142-e468-4fd0-92a3-601ef68e6cbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/assamblyFileExample.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/assembler.sqlite" afterDir="false" />
+    <list default="true" id="5fb3d142-e468-4fd0-92a3-601ef68e6cbd" name="Default Changelist" comment="change assets path prepare for path test file kotlin feature">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hazard/HazardTools.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/util/AssemblerTools.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/assembler/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/assembler/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/assets/assamblyFileExample.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/assets/assamblyFileExample.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/assembler/ParseFormat.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/assembler/ParseFormatModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/assembler/ParserTools.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/assembler/Parse.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/booth/binary/Booth.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/booth/binary/Booth.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/booth/binary/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/booth/binary/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/floatingpoint/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/floatingpoint/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hazard/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/hazard/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/BinaryOperatorHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/BinaryOperatorHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/DataBase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/DataBase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/FileHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/FileHelper.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/util/PrintHelper.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/util/PrintHelper.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -20,6 +29,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CommittedChangesCache">
+    <option name="refreshEnabled" value="true" />
+    <option name="refreshInterval" value="1" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -54,84 +67,56 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/hazard/HazardTools.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/AssemblerTools.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/ParseFormat.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/assets/assamblyFileExample.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="75" selection-start-line="75" selection-end-line="75" />
+            <state relative-caret-position="17">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/Main.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/hazard/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="136">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/ParserTools.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/floatingpoint/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="221">
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/BinaryOperatorHelper.kt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/assets/assamblyFileExample.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/Primitives.kt">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/ParseFormatModel.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11237">
-              <caret line="661" column="15" selection-start-line="661" selection-start-column="15" selection-end-line="661" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/booth/binary/Booth.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/collections/TypeAliases.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/booth/binary/Main.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/booth/string/Main.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="20" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+            <state relative-caret-position="1224">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
@@ -171,7 +156,9 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/kotlin/floatingpoint/FloatArithmetic.kt" root0="FORCE_HIGHLIGHTING" />
@@ -197,7 +184,6 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/floatingpoint/M.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/booth/string/Main.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/floatingpoint/FloatBinaryTools.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/floatingpoint/Main.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/util/Test.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/assembler/DataBaseUtil.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/assembler/Model.kt" />
@@ -211,15 +197,23 @@
         <option value="$PROJECT_DIR$/src/main/kotlin/util/DataBaseModelEntity.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/assembler/Parser.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/util/FileHelper.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/util/BinaryOperatorHelper.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/util/PrintHelper.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/util/DataBase.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/assembler/ParserTools.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/assembler/ParseFormat.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/booth/binary/Main.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/booth/binary/Booth.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/util/BinaryOperatorHelper.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/util/DataBase.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/assembler/Main.kt" />
+        <option value="$PROJECT_DIR$/src/main/assets/assamblyFileExample1.txt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/util/FileHelper.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/util/PrintHelper.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/floatingpoint/Main.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/assembler/ParserTools.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/assembler/Parse.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/assembler/ParseFormat.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/assembler/ParseFormatModel.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/util/AssemblerTools.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/hazard/Main.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/hazard/HazardTools.kt" />
+        <option value="$PROJECT_DIR$/src/main/assets/assamblyFileExample.txt" />
       </list>
     </option>
   </component>
@@ -237,8 +231,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="616" />
-    <option name="y" value="19" />
+    <option name="x" value="268" />
+    <option name="y" value="85" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -258,18 +252,45 @@
           <expand>
             <path>
               <item name="booth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="computer_desingn" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="computer_desingn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="booth" type="b2602c69:ProjectViewProjectNode" />
-              <item name="computer_desingn" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="computer_desingn" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="booth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer_desingn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="booth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer_desingn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="booth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer_desingn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="booth" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer_desingn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="hazard" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -302,6 +323,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,7 +337,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="settings.editor.splitter.proportion" value="0.23385519" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/kotlin/util/OperateHelper.kt" />
   </component>
@@ -329,11 +351,11 @@
       <recent name="C:\Users\arash\IdeaProjects\computer_desingn\src\main\kotlin\booth" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dev\workspace\kotlin\computer_desingn\src\main" />
       <recent name="C:\dev\workspace\kotlin\computer_desingn\src" />
       <recent name="C:\dev\workspace\kotlin\computer_desingn\src\main\kotlin\util" />
       <recent name="C:\dev\workspace\kotlin\computer_desingn\src\main\kotlin\util\database" />
       <recent name="C:\dev\workspace\kotlin\computer_desingn\src\main\kotlin\util\tools" />
-      <recent name="C:\Users\arash\IdeaProjects\computer_desingn\src\main\kotlin\util" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -348,7 +370,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.booth.binary.MainKt">
+  <component name="RunManager" selected="Kotlin.hazard.MainKt">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -381,32 +403,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="assembler.ParseFormatKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="booth.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="assembler.ParseFormatKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="assembler.ParserToolsKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="booth.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="assembler.ParserToolsKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="booth.binary.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="booth.main" />
       <option name="VM_PARAMETERS" />
@@ -420,14 +416,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="util.BinaryOperatorHelperKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="floatingpoint.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="booth.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="util.BinaryOperatorHelperKt" />
+      <option name="MAIN_CLASS_NAME" value="floatingpoint.MainKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hazard.HazardToolsKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="booth.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="hazard.HazardToolsKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hazard.MainKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+      <module name="booth.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="hazard.MainKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -453,11 +475,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.booth.binary.MainKt" />
-        <item itemvalue="Kotlin.assembler.ParseFormatKt" />
+        <item itemvalue="Kotlin.hazard.MainKt" />
+        <item itemvalue="Kotlin.hazard.HazardToolsKt" />
         <item itemvalue="Kotlin.assembler.MainKt" />
-        <item itemvalue="Kotlin.assembler.ParserToolsKt" />
-        <item itemvalue="Kotlin.util.BinaryOperatorHelperKt" />
+        <item itemvalue="Kotlin.floatingpoint.MainKt" />
+        <item itemvalue="Kotlin.booth.binary.MainKt" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +529,21 @@
       <option name="project" value="LOCAL" />
       <updated>1561381685426</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add assets">
+      <created>1561418981348</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561418981348</updated>
+    </task>
+    <task id="LOCAL-00007" summary="change assets path prepare for path test file kotlin feature">
+      <created>1561421400745</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561421400745</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -522,7 +558,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49829933" visible="true" weight="0.29198185" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49829933" visible="true" weight="0.2965204" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -531,13 +567,13 @@
       <window_info id="Favorites" order="6" weight="0.32980332" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32312927" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.45578232" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965987" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32993197" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3282313" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32993197" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.542517" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32993197" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3282313" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.63265306" />
@@ -549,8 +585,8 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Maven" order="6" weight="0.32980332" />
-      <window_info anchor="right" id="Gradle" order="7" weight="0.32980332" />
-      <window_info anchor="right" id="Ant Build" order="8" side_tool="true" weight="0.24962178" />
+      <window_info anchor="right" id="Ant Build" order="7" side_tool="true" weight="0.24962178" />
+      <window_info anchor="right" id="Gradle" order="8" weight="0.32980332" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -594,102 +630,35 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="booth-algorithm" />
     <MESSAGE value="prepare_for_floating_point" />
     <MESSAGE value="before last step for plus float" />
     <MESSAGE value="finish plus" />
     <MESSAGE value="edit whole project" />
     <MESSAGE value="finish assembler" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish assembler" />
+    <MESSAGE value="add assets" />
+    <MESSAGE value="change assets path prepare for path test file kotlin feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="change assets path prepare for path test file kotlin feature" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/hazard/HazardTools.kt</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/util/Numbers.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../sdk/jdk1.8.0_144/src.zip!/java/lang/Float.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12784">
-          <caret line="788" column="29" selection-start-line="788" selection-start-column="29" selection-end-line="788" selection-end-column="29" />
-          <folding>
-            <element signature="e#20919#20920#0" expanded="true" />
-            <element signature="e#20954#20955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed/0.14.2/1e12ff20eea9fb0755a2b43976ab2da900da9bc/exposed-0.14.2-sources.jar!/org/jetbrains/exposed/sql/Database.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="185" column="15" selection-start-line="185" selection-start-column="15" selection-end-line="185" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed/0.14.2/1e12ff20eea9fb0755a2b43976ab2da900da9bc/exposed-0.14.2-sources.jar!/org/jetbrains/exposed/sql/Queries.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed/0.14.2/1e12ff20eea9fb0755a2b43976ab2da900da9bc/exposed-0.14.2-sources.jar!/org/jetbrains/exposed/sql/transactions/ThreadLocalTransactionManager.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="57" column="8" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed/0.14.2/1e12ff20eea9fb0755a2b43976ab2da900da9bc/exposed-0.14.2-sources.jar!/org/jetbrains/exposed/sql/SQLLog.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../../sdk/jdk1.8.0_144/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="1367" column="8" selection-start-line="1367" selection-start-column="8" selection-end-line="1367" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed/0.14.2/1e12ff20eea9fb0755a2b43976ab2da900da9bc/exposed-0.14.2-sources.jar!/org/jetbrains/exposed/sql/Transaction.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="88" column="8" selection-start-line="88" selection-start-column="8" selection-end-line="88" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed/0.14.2/1e12ff20eea9fb0755a2b43976ab2da900da9bc/exposed-0.14.2-sources.jar!/org/jetbrains/exposed/sql/SchemaUtils.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="236" column="8" selection-start-line="236" selection-start-column="8" selection-end-line="236" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed/0.14.2/1e12ff20eea9fb0755a2b43976ab2da900da9bc/exposed-0.14.2-sources.jar!/org/jetbrains/exposed/dao/IntEntity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/Model.kt" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.exposed/exposed/0.14.2/1e12ff20eea9fb0755a2b43976ab2da900da9bc/exposed-0.14.2-sources.jar!/org/jetbrains/exposed/dao/Entity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="509" column="8" selection-start-line="509" selection-start-column="8" selection-end-line="509" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/Test.kt" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/Annotations.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -759,14 +728,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/FileHelper.kt" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/io/Console.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/958c401b129f64de74af4b11a0894693edfa168d/kotlin-stdlib-common-1.3.31-sources.jar!/kotlin/text/Strings.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -795,34 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/PrintHelper.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/floatingpoint/FloatBinaryTools.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/floatingpoint/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/floatingpoint/FloatArithmetic.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/booth/string/Util.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -841,13 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
           <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/DataBase.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
@@ -872,24 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/ParserTools.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/Primitives.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11237">
           <caret line="661" column="15" selection-start-line="661" selection-start-column="15" selection-end-line="661" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/booth/binary/Booth.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -900,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/booth/binary/Main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/booth/string/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -914,23 +819,180 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/BinaryOperatorHelper.kt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/assamblyFileExample.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/Main.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/io/IOStreams.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        <state relative-caret-position="344">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/ParseFormat.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/booth/binary/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
+        <state relative-caret-position="220">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/booth/binary/Booth.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../sdk/jdk1.8.0_144/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="975" lean-forward="true" selection-start-line="975" selection-end-line="975" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../sdk/jdk1.8.0_144/src.zip!/java/io/Writer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/BinaryOperatorHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="90" column="45" selection-start-line="90" selection-start-column="45" selection-end-line="90" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/DataBase.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/assets/assamblyFileExample1.txt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/PrintHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/io/Console.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="79" column="19" lean-forward="true" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../sdk/jdk1.8.0_144/src.zip!/java/io/PrintStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="539" column="17" selection-start-line="539" selection-start-column="17" selection-end-line="539" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/AssemblyFileTools.kt" />
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/FileHelper.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/958c401b129f64de74af4b11a0894693edfa168d/kotlin-stdlib-common-1.3.31-sources.jar!/generated/_Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="1589" column="34" selection-start-line="1589" selection-start-column="34" selection-end-line="1589" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/util/Numbers.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="77" column="12" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/Collections.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="149" column="24" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/d16c788b755be19bf8a7eace113755519a1d7182/kotlin-stdlib-1.3.31-sources.jar!/kotlin/Progressions.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="96" column="15" selection-start-line="96" selection-start-column="15" selection-end-line="96" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/floatingpoint/FloatBinaryTools.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="67" column="12" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/floatingpoint/FloatArithmetic.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/Parse.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/floatingpoint/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/assembler/ParseFormatModel.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/util/AssemblerTools.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/hazard/Main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/hazard/HazardTools.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/assets/assamblyFileExample.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
         </state>
       </provider>
     </entry>
