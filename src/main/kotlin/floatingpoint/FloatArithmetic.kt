@@ -31,6 +31,6 @@ fun plusFloat(n1: Float, n2: Float): Float {
     }
     var result = sumFraction.getRawFraction()
     result = concatBinaryValueTwoNumber(mainExponent, result, Fraction_Size)
-    result = concatBinaryValueTwoNumber(sign, result, Sign_Digit - Sign_Size)
+    result = concatBinaryValueTwoNumber(sign, result, Sign_Digit plusBool  Sign_Size.getNagativeValue())
     return Float.fromBits(result)
 }

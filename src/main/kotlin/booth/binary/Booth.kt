@@ -20,8 +20,8 @@ fun calculate(multipicand: Int, multiplier1: Int): Int {
         }
         /* val temp = (accumulated shl numberOfBit + 1) or (multiplier shl 1) or q0*/
         var temp = concatBinaryValueTwoNumber(multiplier, q0, 1)
-        temp = concatBinaryValueTwoNumber(accumulated, temp, numberOfBit + 1)
-        var result = arethmathicShiftRight(temp, 2 * numberOfBit + 1)
+        temp = concatBinaryValueTwoNumber(accumulated, temp, numberOfBit plusBool  1)
+        var result = arethmathicShiftRight(temp,  numberOfBit shl 1 plusBool 1)
         q0 = result findDigit 1
         result = result deletNumberOfFromFirst  1
         multiplier = result.getRangeOFBit(1..numberOfBit)

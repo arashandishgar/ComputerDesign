@@ -2,6 +2,8 @@ package floatingpoint
 
 import util.concatBinaryValueTwoNumber
 import util.findDigit
+import util.getNagativeValue
+import util.plusBool
 
 const val EXPONENT_BASE_NUM=127
 const val Fraction_Size = 23
@@ -11,7 +13,7 @@ val Fraction_Range_Digit: IntRange by lazy {
 
 const val Exponent_Size = 8
 val Exponent_Range_Digit: IntRange by lazy {
-    Fraction_Size + 1 .. Fraction_Size + Exponent_Size
+    (Fraction_Size plusBool  1) .. (Fraction_Size plusBool  Exponent_Size)
 }
 
 const val Sign_Size = 1
@@ -39,7 +41,7 @@ fun Float.getRawFraction() = getRawFraction(this)
 fun Int.getRawFraction() = getRawFraction(this)
 
 fun getShiftedFraction(fraction: Int, numberOFShift: Int) =
-    (concatBinaryValueTwoNumber(1, fraction shr numberOFShift, Fraction_Size - numberOFShift))
+    (concatBinaryValueTwoNumber(1, fraction shr numberOFShift, Fraction_Size  plusBool numberOFShift.getNagativeValue()))
 
 fun getShiftedFraction(number: Float, numberOFShift: Int) = getShiftedFraction(number.getRawFraction(), numberOFShift)
 
@@ -51,9 +53,9 @@ infix fun Float.getShiftedFraction(numberOFShift: Int) = getShiftedFraction(this
 
 fun findOne(fraction: Int):Int {
     // plus two becuse we assume 25 bit for addition and sbtraction
-    for (i in Fraction_Size+2 downTo  1){
+    for (i in Fraction_Size plusBool 2 downTo  1){
         if((fraction findDigit i) ==1){
-            return i - (Fraction_Size+1)
+            return i plusBool  (Fraction_Size plusBool 1).getNagativeValue()
         }
     }
     return Int.MIN_VALUE
@@ -63,7 +65,7 @@ infix fun Int.getRangeOFBit(intRange:IntRange):Int{
     val first =intRange.first
     var v=0
     for (i in intRange) {
-        v = concatBinaryValueTwoNumber(this findDigit i, v, i - first)
+        v = concatBinaryValueTwoNumber(this findDigit i, v, i plusBool  first.getNagativeValue())
     }
     return v
 }

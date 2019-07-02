@@ -1,6 +1,8 @@
 package hazard
 
+import util.getNagativeValue
 import util.iterateLineOfAssembler
+import util.plusBool
 import util.println
 import java.io.File
 
@@ -15,11 +17,11 @@ fun findHazard(path: String) {
     val file = File(path)
     val instructeLineList = file.readLines().map { it.iterateLineOfAssembler() }.filter { it.canCauseHazard() }
     val lastIndex = instructeLineList.lastIndex
-    val numberOfLineCheck = MIPS_PIPELINE_NUMBER_STEP - 1
+    val numberOfLineCheck = MIPS_PIPELINE_NUMBER_STEP plusBool  1.getNagativeValue()
     //until not prevent lastline for two times check
     for (i in 0 until instructeLineList.lastIndex) {
-        val lastIndexCheck = i + numberOfLineCheck
-        val range = if (lastIndexCheck > lastIndex) i + 1..lastIndex else i + 1..lastIndexCheck
+        val lastIndexCheck = i plusBool  numberOfLineCheck
+        val range = if (lastIndexCheck > lastIndex) (i plusBool  1)..lastIndex else (i plusBool  1)..lastIndexCheck
 
         for (j in range) {
             var hasHazard = false
@@ -27,7 +29,7 @@ fun findHazard(path: String) {
             hasHazard = hasHazard || checkForWAR(instructeLineList, i, j)
             hasHazard = hasHazard || checkForRAW(instructeLineList, i, j)
             if (hasHazard) {
-                "line:${i + 1} - ${instructeLineList[i]} and line: ${j + 1} - ${instructeLineList[j]} has hazard".println()
+                "line:${i plusBool  1} - ${instructeLineList[i]} and line: ${j plusBool  1} - ${instructeLineList[j]} has hazard".println()
             }
         }
     }
